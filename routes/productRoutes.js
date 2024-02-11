@@ -27,6 +27,19 @@ const productController = require('../controller/productController');
  *           type: string
  *         discount_price:
  *           type: string
+ *     UpdateProduct:
+ *       type: object
+ *       properties:
+ *         name:
+ *           type: string
+ *         ratings:
+ *           type: number
+ *         no_of_ratings:
+ *           type: string
+ *         actual_price:
+ *           type: string
+ *         discount_price:
+ *           type: string
  */
 
 /**
@@ -102,7 +115,7 @@ router.post('/products', productController.createProduct);
  *       content:
  *         application/json:
  *           schema:
- *             $ref: '#/components/schemas/Product'
+ *             $ref: '#/components/schemas/UpdateProduct'
  *     responses:
  *       200:
  *         description: Product updated successfully

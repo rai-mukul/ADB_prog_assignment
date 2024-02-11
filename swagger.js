@@ -11,7 +11,8 @@ const options = {
     },
     servers: [
       {
-        url: 'https://adb-assignment-25b00af52cf1.herokuapp.com/', // Update with your server URL
+        url: 'http://localhost:3000', // Localhost
+        // url: 'https://adb-assignment-25b00af52cf1.herokuapp.com/',   //web server
       },
     ],
   },
