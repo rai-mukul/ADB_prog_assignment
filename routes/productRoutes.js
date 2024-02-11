@@ -27,7 +27,7 @@ const productController = require('../controller/productController');
  *           type: string
  *         discount_price:
  *           type: string
- *     UpdateProduct:
+ *     Update Product:
  *       type: object
  *       properties:
  *         name:
@@ -60,7 +60,7 @@ router.get('/products', productController.getAllProducts);
  * @swagger
  * /products/{code}:
  *   get:
- *     summary: Get a product by ID
+ *     summary: Get a product by code
  *     tags: [Products]
  *     parameters:
  *       - in: path
@@ -101,7 +101,7 @@ router.post('/products', productController.createProduct);
  * @swagger
  * /products/{code}:
  *   patch:
- *     summary: Update a product by ID
+ *     summary: Update a product by code
  *     tags: [Products]
  *     parameters:
  *       - in: path
@@ -115,7 +115,7 @@ router.post('/products', productController.createProduct);
  *       content:
  *         application/json:
  *           schema:
- *             $ref: '#/components/schemas/UpdateProduct'
+ *             $ref: '#/components/schemas/Update Product'
  *     responses:
  *       200:
  *         description: Product updated successfully
@@ -128,7 +128,7 @@ router.patch('/products/:code', productController.updateProduct);
  * @swagger
  * /products/{code}:
  *   delete:
- *     summary: Delete a product by ID
+ *     summary: Delete a product by code
  *     tags: [Products]
  *     parameters:
  *       - in: path
