@@ -5,14 +5,14 @@ const options = {
   definition: {
     openapi: '3.0.0',
     info: {
-      title: 'Your API Title',
+      title: 'Amazon Products API', 
       version: '1.0.0',
-      description: 'Description of your API',
+      description: `Welcome to our Amazon products page! We offer a wide range of high-quality products to meet your needs. From electronics to home goods, we've got you covered. Browse our selection and find great deals on top-rated products.`,
     },
     servers: [
       {
-        url: 'http://localhost:3000', // Localhost
-        // url: 'https://adb-assignment-25b00af52cf1.herokuapp.com/',   //web server
+       // url: 'http://localhost:3000', // Localhost
+        url: 'https://adb-assignment-25b00af52cf1.herokuapp.com/',   //web server
       },
     ],
   },
