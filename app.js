@@ -1,9 +1,9 @@
-require('dotenv').config();
+require("dotenv").config();
 
-const express = require('express');
-const mongoose = require('mongoose');
-const productRoutes = require('./routes/productRoutes');
-const swaggerSetup = require('./swagger');
+const express = require("express");
+const mongoose = require("mongoose");
+const productRoutes = require("./routes/productRoutes");
+const swaggerSetup = require("./swagger");
 
 const app = express();
 app.use(express.json());
@@ -14,19 +14,19 @@ mongoose
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
-  .then(() => console.log('Connected to MongoDB Atlas'))
-  .catch((err) => console.error('Error connecting to MongoDB Atlas:', err));
+  .then(() => console.log("Connected to MongoDB Atlas"))
+  .catch((err) => console.error("Error connecting to MongoDB Atlas:", err));
 
 // Swagger setup
 swaggerSetup(app);
 
 // Serve static files from the 'public' directory
 // app.use(express.static('public'));
-app.get('/', (req, res) => {
-  res.redirect('/api-docs');
+app.get("/", (req, res) => {
+  res.redirect("/api-docs");
 });
 // Routes
-app.use('/', productRoutes);
+app.use("/", productRoutes);
 
 // Start the server
 const PORT = process.env.PORT || 3000;
