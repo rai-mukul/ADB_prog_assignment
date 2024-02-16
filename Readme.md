@@ -9,50 +9,35 @@ This project uses the following environment variables:
 
 
 # Pre-requisites
-- Install [Node.js](https://nodejs.org/en/) version 8.0.0
+- Install [Node.js](https://nodejs.org/en/) version > 20.0.0
 
 
 # Getting started
 - Clone the repository
 ```
-git clone  <git lab template url> <project_name>
+git clone  https://github.com/rai-mukul/ADB_prog_assignment
 ```
 - Install dependencies
 ```
-cd <project_name>
+cd ADB_prog_assignment
 npm install
 ```
 - Build and run the project
 ```
 npm start
 ```
-  Navigate to `http://localhost:8001`
+  Navigate to `http://localhost:3000`
 
 - API Document endpoints
 
-  swagger Spec Endpoint : http://localhost:8001/api-docs 
+  swagger Spec Endpoint : http://localhost:300/api-docs 
 
-  swagger-ui  Endpoint : http://localhost:8001/docs 
-
-
-# TypeScript + Node 
-The main purpose of this repository is to show a project setup and workflow for writing microservice. The Rest APIs will be using the Swagger (OpenAPI) Specification.
-
-
-
-
-## Getting TypeScript
-Add Typescript to project `npm`.
-```
-npm install -D typescript
-```
 
 ## Project Structure
 The folder structure of this app is explained below:
 
 | Name | Description |
 | ------------------------ | --------------------------------------------------------------------------------------------- |
-| **dist**                 | Contains the distributable (or output) from your TypeScript build.  |
 | **node_modules**         | Contains all  npm dependencies                                                            |
 | **src**                  | Contains  source code that will be compiled to the dist dir                               |
 | **configuration**        | Application configuration including environment-specific configs 
