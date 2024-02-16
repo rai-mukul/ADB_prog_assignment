@@ -1,4 +1,4 @@
-# Nodejs FES Template
+# Amazon Products API
 
 # Environment vars
 This project uses the following environment variables:
