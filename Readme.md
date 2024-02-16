@@ -46,31 +46,7 @@ The folder structure of this app is explained below:
 | package.json             | Contains npm dependencies as well as [build scripts](#what-if-a-library-isnt-on-definitelytyped)   | tsconfig.json            | Config settings for compiling source code only written in TypeScript    
 | tslint.json              | Config settings for TSLint code style checking                                                |
 
-## Building the project
-### Configuring TypeScript compilation
-```json
-{
-    "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
-      "outDir": "dist",
-      "sourceMap": true
-    },
-    
-    "include": [
-      "src/**/*.ts"
-      
 
-    ],
-    "exclude": [
-      "src/**/*.spec.ts",
-      "test",
-      "node_modules"
-    
-    ]
-  }
-
-```
 
 ### Running the build
 All the different build steps are orchestrated via [npm scripts](https://docs.npmjs.com/misc/scripts).
