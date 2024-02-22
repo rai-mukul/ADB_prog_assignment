@@ -144,5 +144,6 @@ router.patch('/products/:code', productController.updateProduct);
  *         description: Product not found
  */
 router.delete('/products/:code', productController.deleteProduct);
+router.get('/productBegin', productController.productBegin);
 
 module.exports = router;
